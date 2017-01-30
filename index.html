@@ -4,7 +4,7 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" ype="text/css" href="css/bootstrap.min.css"/>
-      <!--  <link rel="stylesheet" type="text/css" href="css/dc.css"/> -->
+        <link rel="stylesheet" type="text/css" href="css/dc.css"/>
         <link rel="stylesheet" type="text/css" href="css/leaflet.css"/>
         <link rel="stylesheet" type="text/css" href="css/site.css"/>
         <script src="js/jquery-2.1.4.min.js"></script>
@@ -13,27 +13,44 @@
         <script src="js/dc.min.js"></script>
         <script src="js/leaflet.js"></script>
         <script src="js/dc.leaflet.js"></script>
-
         <script src="js/bootstrap.min.js"></script>
-
         <script src="data/biomass.json"></script>
 
     </head>
     <body>
-      <div class='container' id='main-container'>
-          <div class='content'>
-              <div class='container' style='font: 10px sans-serif;'>
-                  <h3>Data Visualisation</h3>
-                  <div class='row-fluid'>
-                      <div class='remaining-graphs span8'>
-                          <div class='row-fluid'>
-                              <div class='bubble-graph span12' id='biomasseGraphe'>
-                                  <h4>Valeur de biomasse</h4>
-                              </div>
-                          </div>
-                     </div>
-                 </div>
-            </div>
+      <div class="container-fluid" id='main-container'>
+        <div class='content'>
+          <div class='container' style='font: 10px sans-serif;'>
+            <h3>Data Visualisations</h3>
+          	<div class="row">
+          		<div class="col-md-12">
+          			<div class="row">
+          				<div class="col-md-6" id='biomasseGraphe'>
+                    <h4>Valeur de biomasse</h4>
+                    <p>
+                      Les valeurs de biomasse sur la periode de 1998 à 2016.
+                    </p>
+          				</div>
+          				<div class="col-md-6" id='grapheAnomalie'>
+                    <h4>Anomalie de la biomasse</h4>
+                    <p>
+                      l'anomalie correspondat a la valeur de l'annee en cours rapportee a celle moyenne
+                    </p>
+          				</div>
+          			</div>
+          		</div>
+          	</div>
+          	<div class="row">
+          		<div class="col-md-12">
+          			<div class="row">
+          				<div class="col-md-8">
+          				</div>
+          				<div class="col-md-4">
+          				</div>
+          			</div>
+          		</div>
+          	</div>
+          </div>
         </div>
       </div>
       <script src="js/site.js"></script>
