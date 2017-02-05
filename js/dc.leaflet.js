@@ -11,7 +11,7 @@ dc.leafletChart = function (_chart) {
 
     var _createLeaflet = function(root) {
         return L.map(root.node(),_mapOptions);
-    };    
+    };
 
     var _tiles = function (map) {
         L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -25,7 +25,7 @@ dc.leafletChart = function (_chart) {
         }
         _createLeaflet = _;
         return _chart;
-    };    
+    };
 
     _chart._doRender = function (map) {
 
@@ -624,10 +624,10 @@ dc.leafletChoroplethChart = function (parent, chartGroup) {
     var _featureKey = function (feature) {
         return feature.key;
     };
-    
+
     function isSelectedGeo(d) {
         return _chart.hasFilter(d.key);
-    }    
+    }
 
     var _featureStyle = function (feature) {
         var options = _chart.featureOptions();
@@ -641,17 +641,17 @@ dc.leafletChoroplethChart = function (parent, chartGroup) {
                 if (isSelectedGeo(v.d)) {
                     options.fillColor = _chart.getColor(v.d.value, v.i);
                     options.opacity = 1;
-                    options.fillOpacity = 0.5;                                
+                    options.fillOpacity = 0.5;
                 } else {
                     options.fillColor = _chart.getColor(0, v.i);
                     options.opacity = 1;
-                    options.fillOpacity = 0.5;                                
+                    options.fillOpacity = 0.5;
                 }
             } else {
                 options.fillColor = _chart.getColor(v.d.value, v.i);
                 options.opacity = 1;
-                options.fillOpacity = 0.5;                 
-            }           
+                options.fillOpacity = 0.5;
+            }
         }
         return options;
     };
@@ -680,7 +680,7 @@ dc.leafletChoroplethChart = function (parent, chartGroup) {
             };
 
         _info.addTo(_chart.map());
-                
+
         _chart.map().addLayer(_geojsonLayer);
     };
 
@@ -707,7 +707,7 @@ dc.leafletChoroplethChart = function (parent, chartGroup) {
         }
         _geojsonLayer = _;
         return _chart;
-    };    
+    };
 
     _chart.featureOptions = function (_) {
         if (!arguments.length) {
@@ -765,16 +765,16 @@ dc.leafletChoroplethChart = function (parent, chartGroup) {
                     } else {
                         var info = _chart.popup()(feature);
                     }
-                    _info.update(info);                    
+                    _info.update(info);
                 });
                 layer.on("mouseout",function(){
                     _info.update();
-                });   
+                });
         if (v && v.d) {
             layer.key = v.d.key;
-            if (_chart.renderPopup()) {             
+            if (_chart.renderPopup()) {
                 //layer.bindPopup(_chart.popup()(v.d, feature));
-             
+
             }
             if (_chart.brushOn()) {
                 layer.on("click", selectFilter);

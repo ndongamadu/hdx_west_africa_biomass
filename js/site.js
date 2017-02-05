@@ -1,59 +1,97 @@
-d3.json("data/biomass.json", function(biomasse_data) {
+var geodata = "data/bio-wa.geojson" ;
+var data = "data/bf-biomasse.json" ;
+
+function generateringComponent(data, geodata){
+
+  var lookup = genLookup(geodata) ;
+
+  var sahelBioChart = dc.rowChart('#sahel-biomasse-bar');
+  var sahelBioMap = dc.leafletChoroplethChart('#sahel-biomasse-map');
+
+  var cf = crossfilter(data) ;
+  var all = cf.groupAll();
+
+  var barDimension = cf.dimension(function(d) { return d.ADM1_NAME}) ;
+  var mapDimension = cf.dimension(function(d) { return d.Rowcacode1});
+
+  var barGroup = barDimension.group().reduceSum(function(d){ return d.Biomasse});
+  var mapGroup = mapDimension.group();
+
+  sahelBioChart.width(450)
+               .height(350)
+               .dimension(barDimension)
+               .group(barGroup)
+               .elasticX(true)
+               .colors('#03a9f4')
+               .colorAccessor(function(d,i){ return 0;})
+               .xAxis().ticks(5);
+
+dc.dataCount('#count-info')
+  .dimension(cf)
+  .group(all);
 
 
-  biomasse_data.forEach(function(d){
-      d.ID = +d.ID ;
-      d.MEAN = +d.MEAN ;
-  });
+  sahelBioMap.width(450)
+             .height(350)
+             .dimension(mapDimension)
+             .group(mapGroup)
+             .center([0,0])
+             .zoom(0)
+             .geojson(geodata)
+             .colors(['#CCCCCC','#03a9f4'])
+             .colorDomain([0,1])
+             .colorAccessor(function (d){
+               if (d>0) {
+                 return 1;
+               } else {
+                 return 0;
+               }
+             })
+             .featureKeyAccessor(function (feature){
+               return feature.properties['Rowcacode1'];
+             }).popup(function (d){
+               return lookup[d.key];
+             })
+             .renderPopup(true);
 
-  var biomasseChart = dc.barChart('#biomasseGraphe');
+      dc.renderAll();
 
-  var ndx = crossfilter(biomasse_data);
-  var dimension98 = ndx.dimension(function(d){return d.ID});
-  var dimensionGroup = dimension98.group().reduceSum(function(d){
-    return d.MEAN ;
-  });
+      var map = sahelBioMap.map();
 
-  biomasseChart.width(450)
-              .height(300)
-              .x(d3.scale.linear().domain([1, 15]))
-              .group(dimensionGroup)
-              .dimension(dimension98)
-            //  .renderHorizontalGridLines(true)
-              .elasticX(true)
-              //.xAxis().ticks(4)
-              // .label(function(d){
-              //   return d.NAME;
-              // })
-              .render();
+      zoomToGeom(geodata);
+
+      function zoomToGeom(geom){
+        var bounds = d3.geo.bounds(geom) ;
+        map.fitBounds([[bounds[0][1],bounds[0][0]],[bounds[1][1],bounds[1][0]]]);
+      }
+
+      function genLookup(geojson) {
+        var lookup = {} ;
+        geojson.features.forEach(function (e) {
+          lookup[e.properties['Rowcacode2']] = String(e.properties['ADM2_NAME']);
+        });
+        return lookup ;
+      }
+}
+
+var dataCall = $.ajax({
+    type: 'GET',
+    url: 'data/bf-biomasse.json',
+    dataType: 'json',
 });
 
-d3.csv('data/test.csv', function(csvdata) {
 
-    // csvdata.forEach(function(d){
-    //     d.annee = d.annee ;
-    //     d.biomasse = +d.biomasse ;
-    // });
+var geomCall = $.ajax({
+    type: 'GET',
+    url: 'data/bio-wa.geojson',
+    dataType: 'json',
+});
 
 
-    var csvChart = dc.barChart('#grapheAnomalie') ;
-
-    var cd = crossfilter(csvdata);
-    var csvDim = cd.dimension(function(d){ return d.annee});
-    var csvGroup = csvDim.group().reduceSum(function(d){
-      return d.biomasse;
+$.when(dataCall, geomCall).then(function(dataArgs, geomArgs){
+    var geom = geomArgs[0];
+    geom.features.forEach(function(e){
+        e.properties['Rowcacode2'] = String(e.properties['Rowcacode2']);
     });
-
-
-    csvChart.width(450)
-            .height(300)
-            .dimension(csvDim)
-            .group(csvGroup)
-            .x(d3.scale.linear().domain([1998, 2007]))
-            .elasticY(true)
-            .yAxisLabel("Axe des Y!")
-            //.colors(["#a60000","#ff0000", "#ff4040","#ff7373","#67e667","#39e639","#00cc00"])
-	          .xAxis().tickFormat();
-
-    csvChart.render();
+    generateringComponent(dataArgs[0],geom);
 });
