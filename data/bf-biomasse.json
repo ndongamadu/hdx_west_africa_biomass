@@ -1,0 +1,702 @@
+[
+  {
+    "ADM1_NAME": "Centre",
+    "ADM2_NAME": "Kadiogo",
+    "Rowcacode2": "BFA013000",
+    "Biomasse": 1635827.731,
+    "Annee": 1998
+  },
+  {
+    "ADM1_NAME": "Centre",
+    "ADM2_NAME": "Kadiogo",
+    "Rowcacode2": "BFA013000",
+    "Biomasse": 1947377.412,
+    "Annee": 1999
+  },
+  {
+    "ADM1_NAME": "Centre",
+    "ADM2_NAME": "Kadiogo",
+    "Rowcacode2": "BFA013000",
+    "Biomasse": 1741056.601,
+    "Annee": 2000
+  },
+  {
+    "ADM1_NAME": "Centre",
+    "ADM2_NAME": "Kadiogo",
+    "Rowcacode2": "BFA013000",
+    "Biomasse": 1442326.135,
+    "Annee": 2001
+  },
+  {
+    "ADM1_NAME": "Boucle du Mouhoun",
+    "ADM2_NAME": "Bale",
+    "Rowcacode2": "BFA046001",
+    "Biomasse": 4913114.479,
+    "Annee": 1998
+  },
+  {
+    "ADM1_NAME": "Boucle du Mouhoun",
+    "ADM2_NAME": "Bale",
+    "Rowcacode2": "BFA046001",
+    "Biomasse": 5364739.371,
+    "Annee": 1999
+  },
+  {
+    "ADM1_NAME": "Boucle du Mouhoun",
+    "ADM2_NAME": "Bale",
+    "Rowcacode2": "BFA046001",
+    "Biomasse": 5187191.427,
+    "Annee": 2000
+  },
+  {
+    "ADM1_NAME": "Boucle du Mouhoun",
+    "ADM2_NAME": "Bale",
+    "Rowcacode2": "BFA046001",
+    "Biomasse": 4659515.777,
+    "Annee": 2001
+  },
+  {
+    "ADM1_NAME": "Boucle du Mouhoun",
+    "ADM2_NAME": "Banwa",
+    "Rowcacode2": "BFA046002",
+    "Biomasse": 7269675.017,
+    "Annee": 1998
+  },
+  {
+    "ADM1_NAME": "Boucle du Mouhoun",
+    "ADM2_NAME": "Banwa",
+    "Rowcacode2": "BFA046002",
+    "Biomasse": 7523608.776,
+    "Annee": 1999
+  },
+  {
+    "ADM1_NAME": "Boucle du Mouhoun",
+    "ADM2_NAME": "Banwa",
+    "Rowcacode2": "BFA046002",
+    "Biomasse": 6809795.114,
+    "Annee": 2000
+  },
+  {
+    "ADM1_NAME": "Boucle du Mouhoun",
+    "ADM2_NAME": "Banwa",
+    "Rowcacode2": "BFA046002",
+    "Biomasse": 6636270.662,
+    "Annee": 2001
+  },
+  {
+    "ADM1_NAME": "Boucle du Mouhoun",
+    "ADM2_NAME": "Kossi",
+    "Rowcacode2": "BFA046003",
+    "Biomasse": 7033730.07,
+    "Annee": 1998
+  },
+  {
+    "ADM1_NAME": "Boucle du Mouhoun",
+    "ADM2_NAME": "Kossi",
+    "Rowcacode2": "BFA046003",
+    "Biomasse": 7254686.543,
+    "Annee": 1999
+  },
+  {
+    "ADM1_NAME": "Boucle du Mouhoun",
+    "ADM2_NAME": "Kossi",
+    "Rowcacode2": "BFA046003",
+    "Biomasse": 6223573.856,
+    "Annee": 2000
+  },
+  {
+    "ADM1_NAME": "Boucle du Mouhoun",
+    "ADM2_NAME": "Kossi",
+    "Rowcacode2": "BFA046003",
+    "Biomasse": 6332730.186,
+    "Annee": 2001
+  },
+  {
+    "ADM1_NAME": "Boucle du Mouhoun",
+    "ADM2_NAME": "Mouhoun",
+    "Rowcacode2": "BFA046004",
+    "Biomasse": 7315913.692,
+    "Annee": 1998
+  },
+  {
+    "ADM1_NAME": "Boucle du Mouhoun",
+    "ADM2_NAME": "Mouhoun",
+    "Rowcacode2": "BFA046004",
+    "Biomasse": 8004942.582,
+    "Annee": 1999
+  },
+  {
+    "ADM1_NAME": "Boucle du Mouhoun",
+    "ADM2_NAME": "Mouhoun",
+    "Rowcacode2": "BFA046004",
+    "Biomasse": 7312261.242,
+    "Annee": 2000
+  },
+  {
+    "ADM1_NAME": "Boucle du Mouhoun",
+    "ADM2_NAME": "Mouhoun",
+    "Rowcacode2": "BFA046004",
+    "Biomasse": 6704664.539,
+    "Annee": 2001
+  },
+  {
+    "ADM1_NAME": "Boucle du Mouhoun",
+    "ADM2_NAME": "Nayala",
+    "Rowcacode2": "BFA046005",
+    "Biomasse": 3260017.488,
+    "Annee": 1998
+  },
+  {
+    "ADM1_NAME": "Boucle du Mouhoun",
+    "ADM2_NAME": "Nayala",
+    "Rowcacode2": "BFA046005",
+    "Biomasse": 3504881.878,
+    "Annee": 1999
+  },
+  {
+    "ADM1_NAME": "Boucle du Mouhoun",
+    "ADM2_NAME": "Nayala",
+    "Rowcacode2": "BFA046005",
+    "Biomasse": 3079792.406,
+    "Annee": 2000
+  },
+  {
+    "ADM1_NAME": "Boucle du Mouhoun",
+    "ADM2_NAME": "Nayala",
+    "Rowcacode2": "BFA046005",
+    "Biomasse": 3011578.77,
+    "Annee": 2001
+  },
+  {
+    "ADM1_NAME": "Boucle du Mouhoun",
+    "ADM2_NAME": "Sourou",
+    "Rowcacode2": "BFA046006",
+    "Biomasse": 4501573.159,
+    "Annee": 1998
+  },
+  {
+    "ADM1_NAME": "Boucle du Mouhoun",
+    "ADM2_NAME": "Sourou",
+    "Rowcacode2": "BFA046006",
+    "Biomasse": 5142908.725,
+    "Annee": 1999
+  },
+  {
+    "ADM1_NAME": "Boucle du Mouhoun",
+    "ADM2_NAME": "Sourou",
+    "Rowcacode2": "BFA046006",
+    "Biomasse": 4002964.601,
+    "Annee": 2000
+  },
+  {
+    "ADM1_NAME": "Boucle du Mouhoun",
+    "ADM2_NAME": "Sourou",
+    "Rowcacode2": "BFA046006",
+    "Biomasse": 3921555.592,
+    "Annee": 2001
+  },
+  {
+    "ADM1_NAME": "Cascades",
+    "ADM2_NAME": "Comoe",
+    "Rowcacode2": "BFA047001",
+    "Biomasse": 26153091.55,
+    "Annee": 1998
+  },
+  {
+    "ADM1_NAME": "Cascades",
+    "ADM2_NAME": "Comoe",
+    "Rowcacode2": "BFA047001",
+    "Biomasse": 27139599.81,
+    "Annee": 1999
+  },
+  {
+    "ADM1_NAME": "Cascades",
+    "ADM2_NAME": "Comoe",
+    "Rowcacode2": "BFA047001",
+    "Biomasse": 27608045.61,
+    "Annee": 2000
+  },
+  {
+    "ADM1_NAME": "Cascades",
+    "ADM2_NAME": "Comoe",
+    "Rowcacode2": "BFA047001",
+    "Biomasse": 24985091.77,
+    "Annee": 2001
+  },
+  {
+    "ADM1_NAME": "Cascades",
+    "ADM2_NAME": "Leraba",
+    "Rowcacode2": "BFA047002",
+    "Biomasse": 4918483.915,
+    "Annee": 1998
+  },
+  {
+    "ADM1_NAME": "Cascades",
+    "ADM2_NAME": "Leraba",
+    "Rowcacode2": "BFA047002",
+    "Biomasse": 5592559.711,
+    "Annee": 1999
+  },
+  {
+    "ADM1_NAME": "Cascades",
+    "ADM2_NAME": "Leraba",
+    "Rowcacode2": "BFA047002",
+    "Biomasse": 5705179.465,
+    "Annee": 2000
+  },
+  {
+    "ADM1_NAME": "Cascades",
+    "ADM2_NAME": "Leraba",
+    "Rowcacode2": "BFA047002",
+    "Biomasse": 4955998.645,
+    "Annee": 2001
+  },
+  {
+    "ADM1_NAME": "Centre-Est",
+    "ADM2_NAME": "Boulgou",
+    "Rowcacode2": "BFA048001",
+    "Biomasse": 6111792.348,
+    "Annee": 1998
+  },
+  {
+    "ADM1_NAME": "Centre-Est",
+    "ADM2_NAME": "Boulgou",
+    "Rowcacode2": "BFA048001",
+    "Biomasse": 5974027.414,
+    "Annee": 1999
+  },
+  {
+    "ADM1_NAME": "Centre-Est",
+    "ADM2_NAME": "Boulgou",
+    "Rowcacode2": "BFA048001",
+    "Biomasse": 6198730.79,
+    "Annee": 2000
+  },
+  {
+    "ADM1_NAME": "Centre-Est",
+    "ADM2_NAME": "Boulgou",
+    "Rowcacode2": "BFA048001",
+    "Biomasse": 5349699.602,
+    "Annee": 2001
+  },
+  {
+    "ADM1_NAME": "Centre-Est",
+    "ADM2_NAME": "Koulpelogo",
+    "Rowcacode2": "BFA048002",
+    "Biomasse": 5414035.714,
+    "Annee": 1998
+  },
+  {
+    "ADM1_NAME": "Centre-Est",
+    "ADM2_NAME": "Koulpelogo",
+    "Rowcacode2": "BFA048002",
+    "Biomasse": 5068763.275,
+    "Annee": 1999
+  },
+  {
+    "ADM1_NAME": "Centre-Est",
+    "ADM2_NAME": "Koulpelogo",
+    "Rowcacode2": "BFA048002",
+    "Biomasse": 5479598.731,
+    "Annee": 2000
+  },
+  {
+    "ADM1_NAME": "Centre-Est",
+    "ADM2_NAME": "Koulpelogo",
+    "Rowcacode2": "BFA048002",
+    "Biomasse": 4770135.364,
+    "Annee": 2001
+  },
+  {
+    "ADM1_NAME": "Centre-Est",
+    "ADM2_NAME": "Kouritenga",
+    "Rowcacode2": "BFA048003",
+    "Biomasse": 1738737.528,
+    "Annee": 1998
+  },
+  {
+    "ADM1_NAME": "Centre-Est",
+    "ADM2_NAME": "Kouritenga",
+    "Rowcacode2": "BFA048003",
+    "Biomasse": 1908073.216,
+    "Annee": 1999
+  },
+  {
+    "ADM1_NAME": "Centre-Est",
+    "ADM2_NAME": "Kouritenga",
+    "Rowcacode2": "BFA048003",
+    "Biomasse": 1748638.401,
+    "Annee": 2000
+  },
+  {
+    "ADM1_NAME": "Centre-Est",
+    "ADM2_NAME": "Kouritenga",
+    "Rowcacode2": "BFA048003",
+    "Biomasse": 1329632.441,
+    "Annee": 2001
+  },
+  {
+    "ADM1_NAME": "Centre-Nord",
+    "ADM2_NAME": "Bam",
+    "Rowcacode2": "BFA049001",
+    "Biomasse": 1909160.281,
+    "Annee": 1998
+  },
+  {
+    "ADM1_NAME": "Centre-Nord",
+    "ADM2_NAME": "Bam",
+    "Rowcacode2": "BFA049001",
+    "Biomasse": 1944525.978,
+    "Annee": 1999
+  },
+  {
+    "ADM1_NAME": "Centre-Nord",
+    "ADM2_NAME": "Bam",
+    "Rowcacode2": "BFA049001",
+    "Biomasse": 1575615.053,
+    "Annee": 2000
+  },
+  {
+    "ADM1_NAME": "Centre-Nord",
+    "ADM2_NAME": "Bam",
+    "Rowcacode2": "BFA049001",
+    "Biomasse": 1497044.46,
+    "Annee": 2001
+  },
+  {
+    "ADM1_NAME": "Centre-Nord",
+    "ADM2_NAME": "Namentenga",
+    "Rowcacode2": "BFA049002",
+    "Biomasse": 2889007.8,
+    "Annee": 1998
+  },
+  {
+    "ADM1_NAME": "Centre-Nord",
+    "ADM2_NAME": "Namentenga",
+    "Rowcacode2": "BFA049002",
+    "Biomasse": 3136891.269,
+    "Annee": 1999
+  },
+  {
+    "ADM1_NAME": "Centre-Nord",
+    "ADM2_NAME": "Namentenga",
+    "Rowcacode2": "BFA049002",
+    "Biomasse": 2387201.524,
+    "Annee": 2000
+  },
+  {
+    "ADM1_NAME": "Centre-Nord",
+    "ADM2_NAME": "Namentenga",
+    "Rowcacode2": "BFA049002",
+    "Biomasse": 2048359.018,
+    "Annee": 2001
+  },
+  {
+    "ADM1_NAME": "Centre-Nord",
+    "ADM2_NAME": "Sanmatenga",
+    "Rowcacode2": "BFA049003",
+    "Biomasse": 4300384.088,
+    "Annee": 1998
+  },
+  {
+    "ADM1_NAME": "Centre-Nord",
+    "ADM2_NAME": "Sanmatenga",
+    "Rowcacode2": "BFA049003",
+    "Biomasse": 4859378.37,
+    "Annee": 1999
+  },
+  {
+    "ADM1_NAME": "Centre-Nord",
+    "ADM2_NAME": "Sanmatenga",
+    "Rowcacode2": "BFA049003",
+    "Biomasse": 3882466.052,
+    "Annee": 2000
+  },
+  {
+    "ADM1_NAME": "Centre-Nord",
+    "ADM2_NAME": "Sanmatenga",
+    "Rowcacode2": "BFA049003",
+    "Biomasse": 3632937.656,
+    "Annee": 2001
+  },
+  {
+    "ADM1_NAME": "Centre-Ouest",
+    "ADM2_NAME": "Boulkiemde",
+    "Rowcacode2": "BFA050001",
+    "Biomasse": 2955464.343,
+    "Annee": 1998
+  },
+  {
+    "ADM1_NAME": "Centre-Ouest",
+    "ADM2_NAME": "Boulkiemde",
+    "Rowcacode2": "BFA050001",
+    "Biomasse": 3241274.317,
+    "Annee": 1999
+  },
+  {
+    "ADM1_NAME": "Centre-Ouest",
+    "ADM2_NAME": "Boulkiemde",
+    "Rowcacode2": "BFA050001",
+    "Biomasse": 2884229.323,
+    "Annee": 2000
+  },
+  {
+    "ADM1_NAME": "Centre-Ouest",
+    "ADM2_NAME": "Boulkiemde",
+    "Rowcacode2": "BFA050001",
+    "Biomasse": 2470737.479,
+    "Annee": 2001
+  },
+  {
+    "ADM1_NAME": "Centre-Ouest",
+    "ADM2_NAME": "Sanguie",
+    "Rowcacode2": "BFA050002",
+    "Biomasse": 4704372.225,
+    "Annee": 1998
+  },
+  {
+    "ADM1_NAME": "Centre-Ouest",
+    "ADM2_NAME": "Sanguie",
+    "Rowcacode2": "BFA050002",
+    "Biomasse": 5083181.36,
+    "Annee": 1999
+  },
+  {
+    "ADM1_NAME": "Centre-Ouest",
+    "ADM2_NAME": "Sanguie",
+    "Rowcacode2": "BFA050002",
+    "Biomasse": 4568289.913,
+    "Annee": 2000
+  },
+  {
+    "ADM1_NAME": "Centre-Ouest",
+    "ADM2_NAME": "Sanguie",
+    "Rowcacode2": "BFA050002",
+    "Biomasse": 4176932.366,
+    "Annee": 2001
+  },
+  {
+    "ADM1_NAME": "Centre-Ouest",
+    "ADM2_NAME": "Sissili",
+    "Rowcacode2": "BFA050003",
+    "Biomasse": 10415404.69,
+    "Annee": 1998
+  },
+  {
+    "ADM1_NAME": "Centre-Ouest",
+    "ADM2_NAME": "Sissili",
+    "Rowcacode2": "BFA050003",
+    "Biomasse": 11184451.12,
+    "Annee": 1999
+  },
+  {
+    "ADM1_NAME": "Centre-Ouest",
+    "ADM2_NAME": "Sissili",
+    "Rowcacode2": "BFA050003",
+    "Biomasse": 11005567.72,
+    "Annee": 2000
+  },
+  {
+    "ADM1_NAME": "Centre-Ouest",
+    "ADM2_NAME": "Sissili",
+    "Rowcacode2": "BFA050003",
+    "Biomasse": 9576952.823,
+    "Annee": 2001
+  },
+  {
+    "ADM1_NAME": "Centre-Ouest",
+    "ADM2_NAME": "Ziro",
+    "Rowcacode2": "BFA050004",
+    "Biomasse": 6607202.519,
+    "Annee": 1998
+  },
+  {
+    "ADM1_NAME": "Centre-Ouest",
+    "ADM2_NAME": "Ziro",
+    "Rowcacode2": "BFA050004",
+    "Biomasse": 7554682.966,
+    "Annee": 1999
+  },
+  {
+    "ADM1_NAME": "Centre-Ouest",
+    "ADM2_NAME": "Ziro",
+    "Rowcacode2": "BFA050004",
+    "Biomasse": 7364730.989,
+    "Annee": 2000
+  },
+  {
+    "ADM1_NAME": "Centre-Ouest",
+    "ADM2_NAME": "Ziro",
+    "Rowcacode2": "BFA050004",
+    "Biomasse": 6536446.372,
+    "Annee": 2001
+  },
+  {
+    "ADM1_NAME": "Centre-Sud",
+    "ADM2_NAME": "Bazega",
+    "Rowcacode2": "BFA051001",
+    "Biomasse": 3559974.83,
+    "Annee": 1998
+  },
+  {
+    "ADM1_NAME": "Centre-Sud",
+    "ADM2_NAME": "Bazega",
+    "Rowcacode2": "BFA051001",
+    "Biomasse": 4062273.819,
+    "Annee": 1999
+  },
+  {
+    "ADM1_NAME": "Centre-Sud",
+    "ADM2_NAME": "Bazega",
+    "Rowcacode2": "BFA051001",
+    "Biomasse": 3976598.021,
+    "Annee": 2000
+  },
+  {
+    "ADM1_NAME": "Centre-Sud",
+    "ADM2_NAME": "Bazega",
+    "Rowcacode2": "BFA051001",
+    "Biomasse": 3520430.628,
+    "Annee": 2001
+  },
+  {
+    "ADM1_NAME": "Centre-Sud",
+    "ADM2_NAME": "Nahouri",
+    "Rowcacode2": "BFA051002",
+    "Biomasse": 5017542.994,
+    "Annee": 1998
+  },
+  {
+    "ADM1_NAME": "Centre-Sud",
+    "ADM2_NAME": "Nahouri",
+    "Rowcacode2": "BFA051002",
+    "Biomasse": 5538387.998,
+    "Annee": 1999
+  },
+  {
+    "ADM1_NAME": "Centre-Sud",
+    "ADM2_NAME": "Nahouri",
+    "Rowcacode2": "BFA051002",
+    "Biomasse": 5390209.109,
+    "Annee": 2000
+  },
+  {
+    "ADM1_NAME": "Centre-Sud",
+    "ADM2_NAME": "Nahouri",
+    "Rowcacode2": "BFA051002",
+    "Biomasse": 4645555.813,
+    "Annee": 2001
+  },
+  {
+    "ADM1_NAME": "Centre-Sud",
+    "ADM2_NAME": "Zoundweogo",
+    "Rowcacode2": "BFA051003",
+    "Biomasse": 3369390.38,
+    "Annee": 1998
+  },
+  {
+    "ADM1_NAME": "Centre-Sud",
+    "ADM2_NAME": "Zoundweogo",
+    "Rowcacode2": "BFA051003",
+    "Biomasse": 3624195.921,
+    "Annee": 1999
+  },
+  {
+    "ADM1_NAME": "Centre-Sud",
+    "ADM2_NAME": "Zoundweogo",
+    "Rowcacode2": "BFA051003",
+    "Biomasse": 3638379.449,
+    "Annee": 2000
+  },
+  {
+    "ADM1_NAME": "Centre-Sud",
+    "ADM2_NAME": "Zoundweogo",
+    "Rowcacode2": "BFA051003",
+    "Biomasse": 3117350.125,
+    "Annee": 2001
+  },
+  {
+    "ADM1_NAME": "Est",
+    "ADM2_NAME": "Gnagna",
+    "Rowcacode2": "BFA052001",
+    "Biomasse": 4448735.121,
+    "Annee": 1998
+  },
+  {
+    "ADM1_NAME": "Est",
+    "ADM2_NAME": "Gnagna",
+    "Rowcacode2": "BFA052001",
+    "Biomasse": 4768768.513,
+    "Annee": 1999
+  },
+  {
+    "ADM1_NAME": "Est",
+    "ADM2_NAME": "Gnagna",
+    "Rowcacode2": "BFA052001",
+    "Biomasse": 3951542.945,
+    "Annee": 2000
+  },
+  {
+    "ADM1_NAME": "Est",
+    "ADM2_NAME": "Gnagna",
+    "Rowcacode2": "BFA052001",
+    "Biomasse": 3262092.364,
+    "Annee": 2001
+  },
+  {
+    "ADM1_NAME": "Est",
+    "ADM2_NAME": "Gourma",
+    "Rowcacode2": "BFA052002",
+    "Biomasse": 9713462.746,
+    "Annee": 1998
+  },
+  {
+    "ADM1_NAME": "Est",
+    "ADM2_NAME": "Gourma",
+    "Rowcacode2": "BFA052002",
+    "Biomasse": 10657123.11,
+    "Annee": 1999
+  },
+  {
+    "ADM1_NAME": "Est",
+    "ADM2_NAME": "Gourma",
+    "Rowcacode2": "BFA052002",
+    "Biomasse": 9907861.762,
+    "Annee": 2000
+  },
+  {
+    "ADM1_NAME": "Est",
+    "ADM2_NAME": "Gourma",
+    "Rowcacode2": "BFA052002",
+    "Biomasse": 8595038.574,
+    "Annee": 2001
+  },
+  {
+    "ADM1_NAME": "Est",
+    "ADM2_NAME": "Komonjdjari",
+    "Rowcacode2": "BFA052003",
+    "Biomasse": 3735397.374,
+    "Annee": 1998
+  },
+  {
+    "ADM1_NAME": "Est",
+    "ADM2_NAME": "Komonjdjari",
+    "Rowcacode2": "BFA052003",
+    "Biomasse": 4466427.016,
+    "Annee": 1999
+  },
+  {
+    "ADM1_NAME": "Est",
+    "ADM2_NAME": "Komonjdjari",
+    "Rowcacode2": "BFA052003",
+    "Biomasse": 3845345.896,
+    "Annee": 2000
+  },
+  {
+    "ADM1_NAME": "Est",
+    "ADM2_NAME": "Komonjdjari",
+    "Rowcacode2": "BFA052003",
+    "Biomasse": 2991665.058,
+    "Annee": 2001
+  }
+]

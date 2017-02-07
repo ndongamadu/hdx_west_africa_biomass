@@ -1,14 +1,14 @@
-var geodata = "data/bio-wa.geojson" ;
-var data = "data/bf-biomasse.json" ;
+// var geodata = "data/bio-wa.geojson" ;
+// var data = "data/bf-biomasse.json" ;
 
-function generateringComponent(data, geodata){
+function generateringComponent(vardata, vargeodata){
 
-  var lookup = genLookup(geodata) ;
+  var lookup = genLookup(vargeodata) ;
 
   var sahelBioChart = dc.rowChart('#sahel-biomasse-bar');
   var sahelBioMap = dc.leafletChoroplethChart('#sahel-biomasse-map');
 
-  var cf = crossfilter(data) ;
+  var cf = crossfilter(vardata) ;
   var all = cf.groupAll();
 
   var barDimension = cf.dimension(function(d) { return d.ADM1_NAME}) ;
@@ -37,7 +37,7 @@ dc.dataCount('#count-info')
              .group(mapGroup)
              .center([0,0])
              .zoom(0)
-             .geojson(geodata)
+             .geojson(vargeodata)
              .colors(['#CCCCCC','#03a9f4'])
              .colorDomain([0,1])
              .colorAccessor(function (d){
@@ -48,7 +48,7 @@ dc.dataCount('#count-info')
                }
              })
              .featureKeyAccessor(function (feature){
-               return feature.properties['Rowcacode1'];
+               return feature.properties['Rowcacode2'];
              }).popup(function (d){
                return lookup[d.key];
              })
@@ -58,10 +58,10 @@ dc.dataCount('#count-info')
 
       var map = sahelBioMap.map();
 
-      zoomToGeom(geodata);
+      zoomToGeom(vargeodata);
 
-      function zoomToGeom(geom){
-        var bounds = d3.geo.bounds(geom) ;
+      function zoomToGeom(geodata){
+        var bounds = d3.geo.bounds(geodata) ;
         map.fitBounds([[bounds[0][1],bounds[0][0]],[bounds[1][1],bounds[1][0]]]);
       }
 
