@@ -33,7 +33,7 @@ dc.leafletChart = function (_chart) {
         if (_defaultCenter && _defaultZoom) {
             _map.setView(_chart.toLocArray(_defaultCenter), _defaultZoom);
         }
-        //_chart.tiles()(_map);
+        _chart.tiles()(_map);
         _chart._postRender();
 
         return _chart._doRedraw();

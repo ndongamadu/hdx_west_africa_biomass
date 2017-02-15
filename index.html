@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>DC crossfilter </title>
+        <title>HDX | ACF | Biomasse viz </title>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" ype="text/css" href="css/bootstrap.min.css"/>
@@ -12,13 +12,14 @@
         <script src="js/crossfilter.v1.min.js"></script>
         <script src="js/dc.min.js"></script>
         <script src="js/leaflet.js"></script>
+        <script src="js/bootstrap.js"></script>
         <script src="js/dc.leaflet.js"></script>
 
     </head>
     <body>
       <div class="container-fluid" id='main-container'>
         <div class='content'>
-          <div class='container' style='font: 10px sans-serif;'>
+          <div class='container'>
           	<div class="row">
               <div class="col-md-12">
                 <h2>Production de biomasse au Sahel de 1998 à 2016 </h2>
@@ -26,7 +27,7 @@
             </div>
             <div id="header" class="row">
               <div class="col-md-8">
-                <p> Les valeurs de biomasse sont exprimees en gramme par metre carré.</p>
+                <p> Les valeurs de biomasse sont exprimees en kilogramme par hectare et tiennent compte des chamsp, forets et paturages.</p>
             </div>
             <div class="col-md-1">
               <a class="reset btn btn-primary btn-sm" id="reset" href="javascript:dc.filterAll();dc.redrawAll();">Reset All</a>
@@ -36,11 +37,13 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6 colheight" id="sahel-biomasse-bar">
-              <p> Production de biomasse par pays. </p>
-            </div>
-            <div class="col-md-6 colheight" id="sahel-biomasse-map">
-            </div>
+            <div class="col-md-6" id="sahel-biomasse-bar"></div>
+            <div class="col-md-6" id="sahel-biomasse-map"></div>
+          </div>
+          <div class="row" id="footer">
+            <p>
+              La biomasse represente la matiere seche contenue dans un volume donné d'herbe. 
+            </p>
           </div>
         </div>
       </div>

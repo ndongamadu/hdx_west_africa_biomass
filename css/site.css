@@ -11,13 +11,9 @@
     font-size:0.8em;
 }
 
-#hdx-3W-where {
-    height:360px;
-    width:100%;
-}
 
-#wheretitle{
-    padding-bottom:10px;
+#sahel-biomasse-map{
+    height:450px;
 }
 
 #header{
@@ -28,10 +24,13 @@
     margin-bottom:20px;
 }
 
-.colheight{
-    height:450px;
+#footer{
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top-color: #dddddd;
+  border-top-style: solid;
+  border-top-width: 1px;
 }
-
 .removepadding {
     padding-right:0px;
     padding-left:0px;

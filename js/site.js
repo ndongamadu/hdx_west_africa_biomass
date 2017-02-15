@@ -1,30 +1,30 @@
-// var geodata = "data/bio-wa.geojson" ;
-// var data = "data/bf-biomasse.json" ;
-
 function generateringComponent(vardata, vargeodata){
 
   var lookup = genLookup(vargeodata) ;
 
-  var sahelBioChart = dc.rowChart('#sahel-biomasse-bar');
+  var sahelBioChart = dc.lineChart('#sahel-biomasse-bar');
   var sahelBioMap = dc.leafletChoroplethChart('#sahel-biomasse-map');
 
   var cf = crossfilter(vardata) ;
   var all = cf.groupAll();
 
-  var barDimension = cf.dimension(function(d) { return d.ADM1_NAME}) ;
-  var mapDimension = cf.dimension(function(d) { return d.Rowcacode1});
+  var barDimension = cf.dimension(function(d) { return d.year}) ;
+  var mapDimension = cf.dimension(function(d) { return d.rowcacode2});
 
-  var barGroup = barDimension.group().reduceSum(function(d){ return d.Biomasse});
-  var mapGroup = mapDimension.group();
+  var barGroup = barDimension.group().reduceSum(function(d){ return d.biomass});
+  var mapGroup = mapDimension.group().reduceSum(function(d){ return d.biomass});
 
   sahelBioChart.width(450)
-               .height(350)
+               .height(450)
                .dimension(barDimension)
                .group(barGroup)
+               .x(d3.scale.linear().domain([1998, 2016]))
+               .renderArea(true)
+               .renderHorizontalGridLines(true)
                .elasticX(true)
                .colors('#03a9f4')
-               .colorAccessor(function(d,i){ return 0;})
-               .xAxis().ticks(5);
+               .colorAccessor(function(d,i){ return 0;});
+               //.xAxis().ticks(5);
 
 dc.dataCount('#count-info')
   .dimension(cf)
@@ -32,7 +32,7 @@ dc.dataCount('#count-info')
 
 
   sahelBioMap.width(450)
-             .height(350)
+             .height(450)
              .dimension(mapDimension)
              .group(mapGroup)
              .center([0,0])
@@ -48,7 +48,7 @@ dc.dataCount('#count-info')
                }
              })
              .featureKeyAccessor(function (feature){
-               return feature.properties['Rowcacode2'];
+               return feature.properties['rowcacode2'];
              }).popup(function (d){
                return lookup[d.key];
              })
@@ -68,7 +68,7 @@ dc.dataCount('#count-info')
       function genLookup(geojson) {
         var lookup = {} ;
         geojson.features.forEach(function (e) {
-          lookup[e.properties['Rowcacode2']] = String(e.properties['ADM2_NAME']);
+          lookup[e.properties['rowcacode2']] = String(e.properties['adm2']);
         });
         return lookup ;
       }
@@ -79,7 +79,11 @@ var dataCall = $.ajax({
     url: 'data/bf-biomasse.json',
     dataType: 'json',
 });
-
+// var dataCall = $.ajax({
+//     type: 'GET',
+//     url: 'data/biomasse.csv',
+//     dataType: 'csv',
+// });
 
 var geomCall = $.ajax({
     type: 'GET',
@@ -91,7 +95,7 @@ var geomCall = $.ajax({
 $.when(dataCall, geomCall).then(function(dataArgs, geomArgs){
     var geom = geomArgs[0];
     geom.features.forEach(function(e){
-        e.properties['Rowcacode2'] = String(e.properties['Rowcacode2']);
+        e.properties['rowcacode2'] = String(e.properties['rowcacode2']);
     });
     generateringComponent(dataArgs[0],geom);
 });
